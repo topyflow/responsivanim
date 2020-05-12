@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Latest Responsive Design-Easy Tuto</title>
+<meta name="viewport" content="width=device-width, initail-scale=1.0">
+<link rel="stylesheet" href="responsiveanim.css">
+</head>
+<body>
+<div class="nav-bar">
+    <div class="nav-logo">
+        <img src="logo.png">
+    </div>
+    <div class="nav-links" id="mobileMenu">
+        <ul>
+            <a href="#"><li>HOME</li></a>   
+            <a href="#"><li>ABOUT</li></a> 
+            <a href="#"><li>SERVICES</li></a>  
+            <a href="#"><li>CONTACT</li></a>  
+            <a href="#"><li>BLOG</li></a>  
+             </ul>
+    </div> 
+    <img src="menu-icon.png" class="menu-icon" onclick="showMenu()">
+</div>
+<div class="hero">
+    <h1>RESPONSIVE DESIGN,<br>MAKE WEBSITE BY YOURSELF</h1>
+    <div class="btn">
+        <span></span><span></span><span></span><span></span>
+        <p>Hover Me</p>
+    </div>
+</div>
+
+<script>
+    function showMenu(){
+        var toggle = document.getElementById("mobileMenu");
+        if(toggle.style.height == "0px")
+        toggle.style.height = "200px";
+        
+        else{
+            toggle.style.height = "0px";
+    }
+
+    }
+</script>
+
+</body>
+
+
+
+
+</html>
